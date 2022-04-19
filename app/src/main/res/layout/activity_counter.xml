@@ -4,39 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CounterActivity">
 
-
-    <Button
-        android:id="@+id/button2"
+    <TextView
+        android:id="@+id/counter_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Launch Profile"
-        android:onClick="onLaunchProfileClicked"
+        android:hint="0"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/max_count_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
     <Button
-        android:id="@+id/max_count_btn"
+        android:id="@+id/go_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Show Counter"
-        android:onClick="onShowCounterClicked"
+        android:text="Go Back"
+        android:onClick="onClickGoBack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/max_count_view" />
+        app:layout_constraintTop_toBottomOf="@+id/counter_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>
